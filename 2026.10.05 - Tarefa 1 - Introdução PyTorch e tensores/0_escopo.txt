@@ -1,0 +1,25 @@
+- Descobrir o que é o PyTorch, para que serve e como instalar.
+    PyTorch é uma biblioteca do PyThon muito utilizada em aplicações de Machine Learning e Deep Learning.
+    
+    Usado principalmente devido às otimizações proporcionadas pelo uso de tensores. Outra grande vantagem é a possibilidade do processamento das operações a partir de GPUs
+
+    A instalação é feita com o comando:
+      pip install torch 
+    Existem ainda outras bibliotecas desenvolvidas para uso com aplicações de visão computacional e processamento de áudio:
+      pip install torchvision torchaudio
+
+    Para a instalação com CUDA habilitado usar o comando:
+      pip install torch --index-url https://download.pytorch.org/whl/cu128
+
+- O que é um tensor?
+    É uma estrutura matemática usada para organizar números. Os tensores podem receber nomes especiais de acordo com o número de dimensões
+      0 Dimensões -> Escalar
+      1 Dimensão -> Vetor
+      2 Dimensões -> Matriz
+      3 Dimensões -> Tensor 3D
+      4 Dimensões -> Tensor 4D
+      N Dimensões -> Tensor ND
+
+- Criar dois tensores aleatorios, fazer a multiplicação matricial deles.
+
+- Criar uma função que. dado duas tuplas, cria 2 tensores com aquele shape e retorna a multiplicação matricial entre eles
