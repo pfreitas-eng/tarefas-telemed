@@ -1,0 +1,19 @@
+O que é backpropagation?
+  É o processo de calcular como os pesos e vieses de uma rede neural influenciam o erro medido em sua saída, propagando os gradientes da função de perda no sentido inverso ao fluxo de informações da rede, desde a camada de saída até as camadas anteriores.
+
+  Esse processo utiliza a regra da cadeia do cálculo diferencial para determinar o gradiente da perda em relação a cada peso e viés, permitindo que um algoritmo de otimização, como o Gradient Descent, ajuste esses parâmetros para reduzir o erro nas previsões da rede.
+
+  O treinamento geralmente começa com pesos inicializados por uma estratégia apropriada e repete o processo de propagação direta (*forward propagation*), cálculo da perda, backpropagation e atualização dos parâmetros ao longo de várias iterações e épocas, buscando minimizar a função de perda.
+
+====================================================================================================
+
+O que é uma Loss Function? Como ela é utilizada com backpropagation?
+  A Loss Function (função de perda) é a função que mede o erro das previsões produzidas pela rede neural em relação aos valores esperados do dataset de treinamento. Ela transforma a diferença entre as previsões e os valores reais em um valor numérico que representa a perda do modelo.
+
+  Esse valor é utilizado pelo processo de backpropagation, que calcula os gradientes da perda em relação aos pesos e vieses da rede, indicando como esses parâmetros influenciam o erro final. O otimizador utiliza esses gradientes para atualizar os parâmetros, buscando minimizar a função de perda ao longo do treinamento.
+
+====================================================================================================
+
+Implemente uma a loss function MSE como uma função que recebe 2 tensores e dá um valor escalar como output
+
+Escolha uma outra loss function e a implemente
