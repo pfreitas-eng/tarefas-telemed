@@ -1,0 +1,7 @@
+- Faça o download do dataset e carregue-o usando a biblioteca Pandas;
+- Remova as colunas: Utilities, Street, Condition2, RoofMatl, Heating, PoolQC, Exterior1st e SaleType.
+- Trate os NA ("None") do dataset. No caso de ser um campo categorico trate isso como mais uma categoria, se for um campo númerico utilize a média da coluna.
+- Calcule o z-score para todas as colunas numericas, não categoricas, e aplique essa transformação para todos os elementos da coluna.
+- Transforme as colunas ordinais em números (Ex: {"None": 0, "Po": 1, "Fa": 2, "TA": 3, "Gd": 4, "Ex": 5}; )
+- Calcule o one-hot encoding para as colunas categóricas.
+- Para a coluna de SalePrice faça ln(z-score(...)) dos valores da coluna.
