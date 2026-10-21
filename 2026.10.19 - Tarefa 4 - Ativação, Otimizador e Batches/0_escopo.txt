@@ -1,0 +1,25 @@
+* O que é learning rate?
+    É um hiperparâmetro do treinamento da rede que define o tamanho do passo dado na atualização dos pesos e vieses a cada batch de treinamento.
+
+
+* O que é um otimizador? Como ele afeta a learning rate?
+    É o algoritmo usado para atualizar os parâmetros da rede durante o treinamento. A learning rate controla a escala geral das atualizações, enquanto o otimizador define a regra para calcular a direção e a magnitude da variação dos parâmetros com base nos gradientes e, dependendo do algoritmo, em seu histórico.
+
+
+* O que diferencia o Adam do SGD?
+    SGD (Stochastic Gradient Descent): é um algoritmo otimizador relativamente simples, que atualiza os parâmetros utilizando o gradiente calculado no batch atual, escalado pela learning rate. Sua versão básica não utiliza o histórico dos gradientes.
+
+    Adam (Adaptive Moment Estimation): é um otimizador que utiliza estimativas da média e da variância dos gradientes, calculadas a partir do histórico de batches, para adaptar a magnitude das atualizações de cada parâmetro. Isso pode tornar o treinamento mais estável e acelerar a convergência em determinados problemas.
+    
+
+* O que é um batch? Por que ele é utilizado?
+    É um lote de exemplos de treinamento utilizado para calcular o gradiente e atualizar os parâmetros da rede em uma iteração do treinamento. O uso de batches permite controlar o consumo de memória e o custo computacional de cada atualização, além de possibilitar o treinamento com conjuntos de dados maiores do que a memória disponível.
+
+
+* O que é uma função de ativação?
+    É uma função aplicada à saída dos neurônios, capaz de introduzir não linearidade no aprendizado da rede e permitir que ela aprenda relações complexas.
+
+
+-------------------------------------------------------
+* Implemente uma função que recebe um tensor e seu output é a função de ativação ReLU com suporte a batches. Não utilize a função ReLU pronta!
+* Adicione suporte a batches para uma loss function da penúltima atividade (ex: MSE, etc...).
