@@ -1,0 +1,71 @@
+
+Columns: ['LotShape']
+'IR1,IR2,IR3,Reg': {
+	Reg: 4,
+	IR1: 3,
+	IR2: 2,
+	IR3: 1,
+},
+
+Columns: ['LandSlope']
+'Gtl,Mod,Sev': {
+	Gtl: 3,
+	Mod: 2,
+	Sev: 1,
+},
+
+Columns: ['ExterQual', 'KitchenQual', 'ExterCond', 'HeatingQC', 'BsmtQual', 'BsmtCond', 'FireplaceQu', 'GarageQual', 'GarageCond']
+'Ex,Fa,Gd,Po,TA, None': {
+	Ex: 5,
+	Gd: 4,
+	TA: 3,
+	Fa: 2,
+	Po: 1,
+  None: 0,
+},
+
+Columns: ['BsmtExposure']
+'Av,Gd,Mn,No,None': {
+	Gd: 4,
+	Av: 3,
+	Mn: 2,
+	No: 1,
+	None: 0,
+},
+
+Columns: ['BsmtFinType1', 'BsmtFinType2']
+'ALQ,BLQ,GLQ,LwQ,None,Rec,Unf': {
+	GLQ: 6,
+	ALQ: 5,
+	BLQ: 4,
+	Rec: 3,
+	LwQ: 2,
+	Unf: 1,
+	None: 0,
+},
+
+Columns: ['Functional']
+'Maj1,Maj2,Min1,Min2,Mod,Sev,Typ': {
+	Typ: 8,
+	Min1: 7,
+	Min2: 6,
+	Mod: 5,
+	Maj1: 4,
+	Maj2: 3,
+	Sev: 1,
+},
+
+Columns: ['GarageFinish']
+'Fin,None,RFn,Unf': {
+	Fin: 3,
+	RFn: 2,
+	Unf: 1,
+	None: 0,
+},
+
+Columns: ['PavedDrive']
+'N,P,Y': {
+	Y: 2,
+	P: 1,
+	N: 0,
+}

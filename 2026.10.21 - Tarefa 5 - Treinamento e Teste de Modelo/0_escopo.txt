@@ -1,0 +1,11 @@
+- Carregue o arquivo train.csv usado na penúltima atividade.
+- Divida as linhas em dois conjuntos: treino (80%) e teste (20%).
+- Faça o pré-processamento usando apenas estatísticas do conjunto de treino. Por exemplo, se você preencheu valores nulos de alguma coluna com a média, use a média do treino, e não a do conjunto completo. O mesmo vale para a média e o desvio padrão do z-score. Caso contrário, informações do teste vazam para o treino e seus resultados ficam contaminados.
+- Concatene as colunas tratadas e use-as como entrada (input) da rede.
+- Crie uma classe que herde de nn.Module. Essa classe será a sua rede neural.
+- A rede deve ter pelo menos 1 ou 2 camadas, cada uma no formato Linear -> ReLU (função de ativação). Exemplo de arquitetura: Linear -> ReLU -> Linear -> ReLU -> Linear (saída).
+- A saída da rede será o preço da casa. Para obter o valor real, reverta o z-score e depois o ln.
+- Treine o modelo usando a função de perda MSE e o otimizador Adam.
+- Treine a rede somente com os dados de treino e avalie-a somente com os dados de teste.
+- Faça os testes e ajustes que julgar necessários para melhorar os resultados e experimentar.
+- Valide os resultados calculando métricas no conjunto de teste: RMSE, MAE e R²..
