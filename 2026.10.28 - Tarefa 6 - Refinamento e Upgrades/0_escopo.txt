@@ -1,0 +1,4 @@
+Bom dia, pessoal. Vamos tentar adicionar novos tipos de layers no modelo de vocês para ver se conseguem ter resultados melhores e explorar tanto o que eles fazem como eles podem impactar (positiva ou negativamente). Adicionem quantas camadas/conexões quiserem, inclusive tentem utilizar todos ao mesmo tempo:
+- Conexões residuais (não são camadas!)
+- LayerNorm ou BatchNorm
+- Dropout (provavelmente não vão ajudar a não ser que seja uma rede mais profunda)
