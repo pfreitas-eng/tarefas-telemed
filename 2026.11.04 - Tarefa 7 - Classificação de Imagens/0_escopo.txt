@@ -1,0 +1,20 @@
+* O que é um canal em uma imagem? O que são pixels?
+  Uma imagem digital é formada por um conjunto de pixels, onde cada pixel vai ter uma coloração para a formação da imagem completa. Imagens de resolução maior possuem mais pixels, permitindo maior detalhamento.
+  A representação dos pixels na memória do computador se dá pela utilização de uma escala de 0 a 255. Cada pixel possui valores em 3 canais distintos (R-Red, G-Green e B-Blue) e a sua coloração final é a composição da intensidade de luz em cada um dos canais (cores base)
+
+
+* Baixar o dataset de imagem: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/WNQ3GI
+
+* Pegar apenas o primeiro canal de cada imagem. Por que fazer isso?
+  As imagens do dataset utilizado foram tratadas para representação em 3 canais (RGB) mas são imagens em grayscale. A representação dos cinzas em RGB se dá utilizando o mesmo valor nos 3 canais, portanto a utilização dos 3 canais só gera redundância.
+
+* Normalizar as imagens para que todos os valores fiquem entre 0 e 1.
+* Tratar as imagens usando z-score apenas do conjunto de treinamento.
+* Em vez de fazer o z-score na mão e converter em tensores usar o v2.Compose do torchvision dessa forma:
+    v2.Compose([
+        v2.RandomHorizontalFlip(p=0.5),
+        v2.ToDtype(torch.float32, scale=False),
+        v2.Normalize(mean=[..., ..., ...], std=[..., ..., ...]),
+    ]) -> Exemplo: https://docs.pytorch.org/vision/stable/transforms.html
+* Treine um modelo de classificação usando essa rede, utilizando o otimizador que quiserem: https://arxiv.org/abs/1512.03385
+* Apresente as métricas de precisão, recall e F1 da sua classificação por classe.
